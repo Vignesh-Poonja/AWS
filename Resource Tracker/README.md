@@ -73,9 +73,8 @@ chmod +x aws_resource_tracker.sh
 ./aws_resource_tracker.sh
 ```
 4. View the Output
-```sh
+
 The output is saved in resourceTracker.txt:
-```
 
 ```sh
 cat resourceTracker.txt
