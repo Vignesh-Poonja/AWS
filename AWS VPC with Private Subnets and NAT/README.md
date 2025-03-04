@@ -35,6 +35,7 @@ For reference, see the AWS documentation: [VPC with servers in private subnets a
    - Number of Private Subnets: `2`
    - NAT Gateways: `1 per AZ` (For high availability)
 5. Create the VPC.
+
 ![image](https://github.com/user-attachments/assets/fd4cc2bf-0e79-49fa-a952-d275cb82774b)
 
 ---
@@ -95,14 +96,17 @@ Provide VPC, Availability zones and subnets details:
 
 
 Configure Group sizing and Scaling:
+
 ![image](https://github.com/user-attachments/assets/4d12f266-a60a-4f84-a9b1-55928e48a34e)
 
 
 Verify the newly created Auto Scaling Group:
+
 ![image](https://github.com/user-attachments/assets/cb42b08e-7535-4577-8643-211081936f0c)
 
 
 Check the Newly created instances:
+
 ![image](https://github.com/user-attachments/assets/035b9402-af54-4a9e-9089-6bc82fcb54c7)
 
 
@@ -129,6 +133,7 @@ Click on “include as below”  Create target group
 
 
 - Keep the port as `80` for HTTP traffic.
+
 ![image](https://github.com/user-attachments/assets/690f99b1-2029-47a5-8847-6f33dd9db772)
 
 
