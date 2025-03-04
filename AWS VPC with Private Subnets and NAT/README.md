@@ -69,58 +69,65 @@ scp -i "path\\to\\key.pem" "path\\to\\file" ubuntu@<Bastion-Host-IP>:/home/ubunt
 
 2. **Create an Auto Scaling Group** to manage EC2 instances across subnets.
 
-![image](https://github.com/user-attachments/assets/23e653a1-5b64-4b74-9e82-103471563948)
+![image](https://github.com/user-attachments/assets/d35d588b-e60e-4a66-b924-d51b166d7a38)
+
 
 Create launch template:
 
-![image](https://github.com/user-attachments/assets/cbb335ae-2f3e-4450-9752-c7fd00c954f8)
+![image](https://github.com/user-attachments/assets/10acb8ac-e71d-4478-8c07-3e3d97e98a0e)
+
 
 Provide the Instance type:
 
-![image](https://github.com/user-attachments/assets/40f5a5b1-8075-42ae-9b33-b97c97cc3075)
+![image](https://github.com/user-attachments/assets/b2a41acc-feb1-4e8c-bcd6-22f46d4e998c)
+![image](https://github.com/user-attachments/assets/844a29b7-660f-477d-a898-0bb0b9347c68)
 
-![image](https://github.com/user-attachments/assets/8f6c7224-2cfb-47ab-9e1e-61713ab72bc5)
 
 Edit Inbound security group rules:
 
-![image](https://github.com/user-attachments/assets/e6bfa98f-88c3-479c-ba7f-fabcd2423912)
+![image](https://github.com/user-attachments/assets/82569848-2768-46e1-aaaf-cbf82483b547)
+
 
 Provide VPC, Availability zones and subnets details:
 
-![image](https://github.com/user-attachments/assets/209828ff-644b-467a-a669-b8e637a26911)
+![image](https://github.com/user-attachments/assets/b2927f66-3e20-4b43-a970-e47fb66e25db)
+![image](https://github.com/user-attachments/assets/66aec5bc-52b2-421e-9c93-73472524f971)
 
-![image](https://github.com/user-attachments/assets/f8d0a31a-df18-44ce-a532-a79f280a083a)
 
 Configure Group sizing and Scaling:
+![image](https://github.com/user-attachments/assets/4d12f266-a60a-4f84-a9b1-55928e48a34e)
 
-![image](https://github.com/user-attachments/assets/3e625fe7-b67a-408b-96fb-21eaad8baf0b)
 
 Verify the newly created Auto Scaling Group:
+![image](https://github.com/user-attachments/assets/cb42b08e-7535-4577-8643-211081936f0c)
 
-![image](https://github.com/user-attachments/assets/474f4e60-9d3f-4ea1-958a-0c3b73960d5b)
 
 Check the Newly created instances:
+![image](https://github.com/user-attachments/assets/035b9402-af54-4a9e-9089-6bc82fcb54c7)
 
-![image](https://github.com/user-attachments/assets/37f98317-37da-43ed-b751-c262d89b1114)
 
 
 4. **Create a Load Balancer**:
-![image](https://github.com/user-attachments/assets/7cdfb84a-5687-4a70-9930-03f3d9283c53)
-![image](https://github.com/user-attachments/assets/499799eb-6cbe-407e-a1fb-71500c34bfa6)
-![image](https://github.com/user-attachments/assets/7cadf9e5-5295-40c9-a47f-5f85602a4c8d)
-![image](https://github.com/user-attachments/assets/ea9d66c3-bd6c-4be9-976c-011b072ec5af)
+![image](https://github.com/user-attachments/assets/d9797bc3-e81e-474d-8c6a-24cff27c819d)
+![image](https://github.com/user-attachments/assets/e0af510e-579d-4125-9ab6-b3e0a2a3e9f3)
+![image](https://github.com/user-attachments/assets/cb33c026-920f-461e-a05e-764edca77fe7)
+
 
 - Define a **target group**.
+![image](https://github.com/user-attachments/assets/b7d29d5e-d667-45bf-9090-7328a1e6695e)
 
 select the Instances
-![image](https://github.com/user-attachments/assets/43c89e63-c47c-4749-8666-a3b058127569)
+![image](https://github.com/user-attachments/assets/cee689b4-ba13-4083-b3d1-1ffe3a2d950d)
 
-Click on “include as below”  Create target group
-![image](https://github.com/user-attachments/assets/4f91e18b-8148-4d40-a907-ba197f2ef142)
-![image](https://github.com/user-attachments/assets/40d467d9-e7ec-4839-aeed-945f04ebd1af)
+
+Click on “include as below”  Create target group
+![image](https://github.com/user-attachments/assets/841434a8-f219-4713-8d4f-be127e1959bd)
+![image](https://github.com/user-attachments/assets/fa168c3f-366e-4cb9-a694-20cfb9bdb02a)
+
 
 - Keep the port as `80` for HTTP traffic.
-![image](https://github.com/user-attachments/assets/9cf42ff7-29ab-477f-b372-9f36c0081013)
+![image](https://github.com/user-attachments/assets/690f99b1-2029-47a5-8847-6f33dd9db772)
+
 
 - Attach the load balancer to your Auto Scaling Group.
   
@@ -131,7 +138,8 @@ Click on “include as below”  Create target group
 - Ensure the **ALB** is distributing traffic correctly.
 - Use AWS **Reachability Analyzer** to troubleshoot any network issues.
 
-![image](https://github.com/user-attachments/assets/5ba29fce-e445-48a6-a3af-b78c63771606)
+![image](https://github.com/user-attachments/assets/082e823c-08a0-4136-b216-1177b26e82d3)
+
 
 
 ---
