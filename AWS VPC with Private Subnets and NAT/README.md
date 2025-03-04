@@ -108,19 +108,22 @@ Check the Newly created instances:
 
 
 4. **Create a Load Balancer**:
+
 ![image](https://github.com/user-attachments/assets/d9797bc3-e81e-474d-8c6a-24cff27c819d)
 ![image](https://github.com/user-attachments/assets/e0af510e-579d-4125-9ab6-b3e0a2a3e9f3)
 ![image](https://github.com/user-attachments/assets/cb33c026-920f-461e-a05e-764edca77fe7)
 
-
 - Define a **target group**.
+
 ![image](https://github.com/user-attachments/assets/b7d29d5e-d667-45bf-9090-7328a1e6695e)
 
 select the Instances
+
 ![image](https://github.com/user-attachments/assets/cee689b4-ba13-4083-b3d1-1ffe3a2d950d)
 
 
 Click on “include as below”  Create target group
+
 ![image](https://github.com/user-attachments/assets/841434a8-f219-4713-8d4f-be127e1959bd)
 ![image](https://github.com/user-attachments/assets/fa168c3f-366e-4cb9-a694-20cfb9bdb02a)
 
