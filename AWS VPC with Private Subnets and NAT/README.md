@@ -14,7 +14,8 @@ For reference, see the AWS documentation: [VPC with servers in private subnets a
 
 ## Architecture Diagram
 
-![image](https://github.com/user-attachments/assets/fa2dfee4-89e2-4bad-9db4-b0a87aaba3b5)
+
+![image](https://github.com/user-attachments/assets/b1c96018-52fc-4a45-b67a-29625017029f)
 
 
 ---
@@ -34,12 +35,7 @@ For reference, see the AWS documentation: [VPC with servers in private subnets a
    - Number of Private Subnets: `2`
    - NAT Gateways: `1 per AZ` (For high availability)
 5. Create the VPC.
-
-![image](https://github.com/user-attachments/assets/bfd5e9e3-2541-434d-8cfb-5938f5923005)
-
-6. Create Autoscalling group:
-
-
+![image](https://github.com/user-attachments/assets/fd4cc2bf-0e79-49fa-a952-d275cb82774b)
 
 ---
 
@@ -55,7 +51,8 @@ For Windows:
 ```sh
 scp -i "path\\to\\key.pem" "path\\to\\file" ubuntu@<Bastion-Host-IP>:/home/ubuntu/
 ```
-![image](https://github.com/user-attachments/assets/a8706511-5af7-490c-aa90-b2bc3a0de7f0)
+![image](https://github.com/user-attachments/assets/5cc5718b-defb-429d-b70e-fa303ee3590e)
+
 
 - Set file permissions:
   ```sh
@@ -65,7 +62,8 @@ scp -i "path\\to\\key.pem" "path\\to\\file" ubuntu@<Bastion-Host-IP>:/home/ubunt
   ```sh
   ssh -i key.pem ubuntu@<Private-IP>
   ```
-![image](https://github.com/user-attachments/assets/df7b1e6e-a777-4c6b-9cc4-69dc4245d9fe)
+![image](https://github.com/user-attachments/assets/711a1299-5faa-442b-bccd-afaa553cc175)
+
 
 
 
